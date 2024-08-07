@@ -1,16 +1,28 @@
 {
-    "resources":[
-        {
-            "id":1,
-            "image":"assets/react.svg",
-            "link":"https://react.dev",
-            "title":"React v18"
-        },
-        {
-            "id":2,
-            "image":"assets/redux-toolkit.svg",
-            "link":"https://redux-toolkit.js.org/",
-            "title":"RTK Query"
-        }
-    ]
+  "resources": [
+    {
+      "id": 1,
+      "image": "assets/react.svg",
+      "link": "https://react.dev",
+      "title": "React v18"
+    },
+    {
+      "id": 2,
+      "image": "assets/redux.svg",
+      "link": "https://redux-toolkit.js.org",
+      "title": "RTK Query"
+    },
+    {
+      "id": 3,
+      "image": "assets/mui.svg",
+      "link": "https://mui.com/",
+      "title": "Material UI"
+    },
+    {
+      "id": 4,
+      "image": "assets/vite.svg",
+      "link": "https://vitejs.dev/",
+      "title": "Vite Js"
+    }
+  ]
 }

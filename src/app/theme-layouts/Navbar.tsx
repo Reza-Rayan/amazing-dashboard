@@ -1,6 +1,6 @@
 import Hidden from "@mui/material/Hidden";
 import { styled } from "@mui/material/styles";
-import NavbarContent from "./NavbarContent";
+import NavbarContent from "./components/NavbarContent";
 
 const navbarWidth = 280;
 
@@ -42,10 +42,13 @@ const Navbar = () => {
       <Hidden lgDown>
         <StyledNavBar
           open
-          className="flex-col flex-auto sticky top-0 overflow-hidden  shrink-0 z-20 shadow-5 bg-blue-900 h-screen text-white
-           p-10"
+          className="flex-col flex-auto sticky top-0 overflow-hidden
+          shrink-0 z-20 shadow-5 bg-slate-800 h-screen
+           text-white px-10 py-4"
         >
-          <NavbarContent />
+          <div className="flex flex-col gap-6">
+            <NavbarContent />
+          </div>
         </StyledNavBar>
       </Hidden>
     </>

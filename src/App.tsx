@@ -1,6 +1,5 @@
 import { Provider } from "react-redux";
 import store from "./app/lib/store.ts";
-import { BrowserRouter } from "react-router-dom";
 import RouteConfig from "./configs/routeConfig.tsx";
 import AppBar from "./app/theme-layouts/AppBar.tsx";
 
@@ -9,9 +8,7 @@ const App = () => {
     <>
       <Provider store={store}>
         <AppBar>
-          <BrowserRouter>
-            <RouteConfig />
-          </BrowserRouter>
+          <RouteConfig />
         </AppBar>
       </Provider>
     </>
