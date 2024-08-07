@@ -1,26 +1,5 @@
-import { ChatIcon, ClipboardIcon, HomeIcon } from "@heroicons/react/outline";
+import { menuItems } from "../../../configs/menuItems";
 import MenuItem from "./MenuItem";
-
-const menuItems = [
-  {
-    id: 1,
-    title: "Home",
-    link: "/",
-    icon: <HomeIcon width={22} />,
-  },
-  {
-    id: 2,
-    title: "Projects",
-    link: "/projects",
-    icon: <ClipboardIcon width={22} />,
-  },
-  {
-    id: 3,
-    title: "Messages",
-    link: "/chats",
-    icon: <ChatIcon width={22} />,
-  },
-];
 
 const MenuList = () => {
   return (

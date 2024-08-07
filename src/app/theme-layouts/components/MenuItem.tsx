@@ -8,7 +8,7 @@ const MenuItem = ({ item }: any) => {
     <li key={item.id}>
       <Link
         to={`${item.link}`}
-        className={`flex items-center text-lg space-x-2 p-2 transition-all
+        className={`flex items-center text-lg gap-x-2 p-2 transition-all
         rounded-lg hover:bg-slate-700
         ${location.pathname === item.link ? "bg-slate-700" : ""}`}
       >
