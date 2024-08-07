@@ -8,7 +8,10 @@ const AppBar = ({ children }: LayoutProps) => {
         <Navbar />
       </aside>
 
-      <main>{children}</main>
+      <div className="w-full">
+        <div className="bg-white shadow-lg p-4"></div>
+        <main>{children}</main>
+      </div>
     </div>
   );
 };

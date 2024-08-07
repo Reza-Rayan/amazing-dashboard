@@ -23,6 +23,12 @@
       "image": "assets/vite.svg",
       "link": "https://vitejs.dev/",
       "title": "Vite Js"
+    },
+    {
+      "id": 5,
+      "image": "assets/tailwind.png",
+      "link": "https://vitejs.dev/",
+      "title": "Vite Js"
     }
   ]
 }
