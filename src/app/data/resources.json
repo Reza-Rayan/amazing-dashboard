@@ -2,8 +2,15 @@
     "resources":[
         {
             "id":1,
-            "image":"/assets/logos/react.svg",
-            "link":"https://react.dev"
+            "image":"assets/react.svg",
+            "link":"https://react.dev",
+            "title":"React v18"
+        },
+        {
+            "id":2,
+            "image":"assets/redux-toolkit.svg",
+            "link":"https://redux-toolkit.js.org/",
+            "title":"RTK Query"
         }
     ]
 }
