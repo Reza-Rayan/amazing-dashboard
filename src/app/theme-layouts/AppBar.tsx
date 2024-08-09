@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import Topbar from "./Topbar";
 import { LayoutProps } from "../../types/Layout.interface";
 
 const AppBar = ({ children }: LayoutProps) => {
@@ -9,7 +10,7 @@ const AppBar = ({ children }: LayoutProps) => {
       </aside>
 
       <div className="w-full">
-        <div className="bg-white shadow-lg p-4"></div>
+        <Topbar />
         <main>{children}</main>
       </div>
     </div>
