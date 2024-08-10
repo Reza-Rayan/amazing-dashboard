@@ -1,9 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 
 const MenuItem = ({ item }: any) => {
+  // Get URL path address
   const location = useLocation();
-
-  console.log(location);
   return (
     <li key={item.id}>
       <Link

@@ -3,12 +3,17 @@ import { Link } from "react-router-dom";
 import ProfileButton from "./components/ProfileButton";
 
 // Icons
-import { SearchIcon, UsersIcon } from "@heroicons/react/solid";
+import { SearchIcon, UsersIcon, HomeIcon } from "@heroicons/react/solid";
 
 const Topbar = () => {
   return (
     <div className="bg-white shadow-lg py-1 px-10 flex justify-between">
       <div className="flex items-center gap-2">
+        <Tooltip title="See Your Friends">
+          <Link to={"/"}>
+            <HomeIcon width={24} />
+          </Link>
+        </Tooltip>
         <Tooltip title="See Your Friends">
           <Link to={"/contacts"}>
             <UsersIcon width={24} />

@@ -8,7 +8,7 @@ import {
 export const menuItems = [
   {
     id: 1,
-    title: "Home",
+    title: "Dashboard",
     link: "/",
     icon: <HomeIcon width={20} />,
   },

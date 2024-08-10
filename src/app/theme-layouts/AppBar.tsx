@@ -1,7 +1,8 @@
+// Custom Components
+import { LayoutProps } from "../../types/Layout.interface";
 import Navbar from "./Navbar";
 import Topbar from "./Topbar";
-import { LayoutProps } from "../../types/Layout.interface";
-
+// ------------------------------------------------------
 const AppBar = ({ children }: LayoutProps) => {
   return (
     <div className="flex">
@@ -11,7 +12,7 @@ const AppBar = ({ children }: LayoutProps) => {
 
       <div className="w-full">
         <Topbar />
-        <main>{children}</main>
+        <main className="py-4">{children}</main>
       </div>
     </div>
   );
