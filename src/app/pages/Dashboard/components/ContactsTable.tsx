@@ -8,27 +8,27 @@ const columns: GridColDef<(typeof users)[number]>[] = [
   {
     field: "firstName",
     headerName: "First name",
-    width: 150,
+    width: 200,
     editable: true,
   },
   {
     field: "lastName",
     headerName: "Last name",
-    width: 150,
+    width: 200,
     editable: true,
   },
   {
     field: "phone",
     headerName: "phone",
     type: "number",
-    width: 110,
+    width: 200,
     editable: true,
   },
   {
     field: "city",
     headerName: "city",
     type: "number",
-    width: 110,
+    width: 200,
     editable: true,
   },
   {
@@ -37,7 +37,8 @@ const columns: GridColDef<(typeof users)[number]>[] = [
     description: "This column has a value getter and is not sortable.",
     sortable: false,
     width: 160,
-    valueGetter: (value, row) => `${row.firstName || ""} ${row.lastName || ""}`,
+    valueGetter: (_value, row) =>
+      `${row.firstName || ""} ${row.lastName || ""}`,
   },
 ];
 

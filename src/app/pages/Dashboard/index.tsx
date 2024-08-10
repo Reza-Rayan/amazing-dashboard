@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 
 // Custom Components
 import CContainer from "../../templates/CContainer";
@@ -19,19 +19,19 @@ const Dashboard = () => {
         >
           Welcome Back, Reza!
         </Typography>
-        <Typography color={"#3e4346"} fontSize={14}>
+        <Typography fontSize={14}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </Typography>
       </CContainer>
       <section className="container mx-auto">
         <Box className="w-full grid grid-cols-3 gap-6">
-          <div className="col-span-2 bg-white rounded-2xl shadow-xl">
+          <CContainer extraClasses="col-span-2  rounded-2xl shadow-xl">
             <LineChart />
-          </div>
-          <div className="col-span-1 bg-white rounded-2xl shadow-xl">
+          </CContainer>
+          <CContainer extraClasses="col-span-1  rounded-2xl shadow-xl">
             <PieChart />
-          </div>
+          </CContainer>
         </Box>
       </section>
       <CContainer>

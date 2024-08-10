@@ -1,5 +1,5 @@
-import { Avatar, Badge, Menu, MenuItem, Tooltip } from "@mui/material";
 import { useState } from "react";
+import { Avatar, Badge, Menu, MenuItem, Tooltip } from "@mui/material";
 // Images and Icons
 import {
   BellIcon,
@@ -8,6 +8,10 @@ import {
   LogoutIcon,
 } from "@heroicons/react/outline";
 import { Link } from "react-router-dom";
+// Custom Components
+import DarkModeButton from "./DarkModeButton";
+// ---------------------------------------------------------------------
+
 const user = {
   data: {
     photoURL: "/assets/avatar.jpg",
@@ -29,6 +33,11 @@ const ProfileButton = () => {
 
   return (
     <div className="flex items-center gap-1">
+      <div className="mx-4">
+        <Tooltip title="Change Color Theme">
+          <DarkModeButton />
+        </Tooltip>
+      </div>
       <Tooltip title="Notifications" className="cursor-pointer">
         <Badge variant="dot" color="primary">
           <BellIcon width={24} />

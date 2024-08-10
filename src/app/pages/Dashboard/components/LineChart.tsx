@@ -42,7 +42,7 @@ const LineChart = () => {
       <Typography variant="h2" fontSize={20} fontWeight={600} marginBottom={2}>
         The performance of the company's forces
       </Typography>
-      <ReactECharts option={option} className="w-full" />
+      <ReactECharts option={option} />
     </div>
   );
 };
