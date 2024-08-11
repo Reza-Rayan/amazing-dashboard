@@ -1,0 +1,6 @@
+.projects_header_banner {
+    background-image: url("/assets/projects_banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
