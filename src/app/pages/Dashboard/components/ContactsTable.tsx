@@ -1,10 +1,25 @@
 import Box from "@mui/material/Box";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 // Import Static Data
+import { Avatar } from "@mui/material";
 import { users } from "../../../data/users.json";
 
 const columns: GridColDef<(typeof users)[number]>[] = [
-  { field: "id", headerName: "Num", width: 90 },
+  {
+    field: "avatar",
+    headerName: "Avatar",
+    width: 90,
+    renderCell: (params) => {
+      // Use the provided avatar URL or fallback to a placeholder image
+      const avatarUrl = params.value;
+
+      if (avatarUrl || avatarUrl != null) {
+        return <Avatar src={avatarUrl} />;
+      } else {
+        <Avatar />;
+      }
+    },
+  },
   {
     field: "firstName",
     headerName: "First name",
@@ -20,7 +35,7 @@ const columns: GridColDef<(typeof users)[number]>[] = [
   {
     field: "phone",
     headerName: "phone",
-    type: "number",
+    type: "string",
     width: 200,
     editable: true,
   },
