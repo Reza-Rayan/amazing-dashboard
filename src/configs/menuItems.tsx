@@ -20,8 +20,8 @@ export const menuItems = [
   },
   {
     id: 3,
-    title: "Messages",
-    link: "/chats",
+    title: "Messenger",
+    link: "/messenger",
     icon: <ChatIcon width={20} />,
   },
   {
