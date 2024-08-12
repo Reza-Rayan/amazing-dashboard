@@ -1,13 +1,11 @@
 // Custom Components
 import ProjectCard from "./ProjectCard";
-// Mock Data
-import { projects } from "../../../data/projects.json";
 // Types
 import { ProjectProps } from "../../../../types/Project.interface";
 
-const ProjectsContainer = () => {
+const ProjectsContainer = ({ projects }: any) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:min-h-[500px]">
       {projects.map((project: ProjectProps) => (
         <ProjectCard
           key={project.id}
