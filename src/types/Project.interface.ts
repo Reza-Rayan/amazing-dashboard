@@ -4,4 +4,5 @@ export interface ProjectProps {
     description?: string;
     completed?: boolean;
     image?: string;
+    category?: string;
 }

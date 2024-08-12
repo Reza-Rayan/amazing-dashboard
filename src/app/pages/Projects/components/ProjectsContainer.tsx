@@ -15,6 +15,7 @@ const ProjectsContainer = () => {
           title={project.title}
           description={project.description}
           completed={project.completed}
+          category={project.category}
         />
       ))}
     </div>

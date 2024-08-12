@@ -5,28 +5,32 @@
             "title":"Crowd Funding",
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam lab et fugiat id magnam minus nemo quam voluptatem. Culpa deleniti explica nisi quod soluta.",
             "completed":false,
-            "image":"/assets/project1.jpg"
+            "image":"/assets/project1.jpg",
+            "category":"Application"
         },
         {
             "id":2,
             "title":"Identity Number",
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam lab et fugiat id magnam minus nemo quam voluptatem. Culpa deleniti explica nisi quod soluta.",
             "completed":true,
-            "image":"/assets/project1.jpg"
+            "image":"/assets/project1.jpg",
+            "category":"Application"
         },
         {
             "id":3,
             "title":"Tosigh",
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam lab et fugiat id magnam minus nemo quam voluptatem. Culpa deleniti explica nisi quod soluta.",
             "completed":false,
-            "image":"/assets/project1.jpg"
+            "image":"/assets/project1.jpg",
+            "category":"Application"
         },
         {
             "id":4,
             "title":"Websites",
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam lab et fugiat id magnam minus nemo quam voluptatem. Culpa deleniti explica nisi quod soluta.",
             "completed":false,
-            "image":"/assets/project1.jpg"
+            "image":"/assets/project1.jpg",
+            "category":"Web"
         }
     ]
 }
