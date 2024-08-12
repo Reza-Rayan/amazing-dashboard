@@ -1,15 +1,15 @@
+import { Avatar, Menu, MenuItem, Tooltip } from "@mui/material";
 import { useState } from "react";
-import { Avatar, Badge, Menu, MenuItem, Tooltip } from "@mui/material";
 // Images and Icons
 import {
-  BellIcon,
   ChevronDownIcon,
-  UserIcon,
   LogoutIcon,
+  UserIcon,
 } from "@heroicons/react/outline";
 import { Link } from "react-router-dom";
 // Custom Components
 import DarkModeButton from "./DarkModeButton";
+import Notifications from "./Notifications";
 // ---------------------------------------------------------------------
 
 const user = {
@@ -38,11 +38,7 @@ const ProfileButton = () => {
           <DarkModeButton />
         </Tooltip>
       </div>
-      <Tooltip title="Notifications" className="cursor-pointer">
-        <Badge variant="dot" color="primary">
-          <BellIcon width={24} />
-        </Badge>
-      </Tooltip>
+      <Notifications />
       <div className="cursor-pointer hover:bg-slate-100 p-2 rounded-lg transition-all">
         <button
           className="flex items-center justify-center gap-2"
