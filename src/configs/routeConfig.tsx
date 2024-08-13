@@ -5,6 +5,7 @@ import Dashboard from "../app/pages/Dashboard";
 import ProjectsPage from "../app/pages/Projects";
 import ProjectPage from "../app/pages/project";
 import Products from "../app/pages/products";
+import CreateProduct from "../app/pages/products/CreateProduct";
 // Errors Pages
 import NotFound from "../app/pages/error/NotFound";
 
@@ -17,6 +18,7 @@ const RouteConfig = () => {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/:title" element={<ProjectPage />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/products/create" element={<CreateProduct />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

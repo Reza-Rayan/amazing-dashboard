@@ -1,4 +1,4 @@
-import { ShoppingBagIcon } from "@heroicons/react/outline";
+import { ShoppingBagIcon, PlusIcon } from "@heroicons/react/outline";
 
 export const shopItems = [
   {
@@ -6,5 +6,11 @@ export const shopItems = [
     title: "products",
     link: "/products",
     icon: <ShoppingBagIcon width={20} />,
+  },
+  {
+    id: 2,
+    title: "Add Product",
+    link: "/products/create",
+    icon: <PlusIcon width={20} />,
   },
 ];

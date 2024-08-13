@@ -1,0 +1,49 @@
+{
+    "products":[
+        {
+            "id":1,
+            "title":"Never Love",
+            "image":"/assets/products/first-snow.jpg",
+            "price":99,
+            "category":"Book",
+            "count":10,
+            "weight":55
+        },
+        {
+            "id":2,
+            "title":"Never Love",
+            "image":"/assets/products/morain-lake.jpg",
+            "price":135,
+            "category":"Book",
+            "count":10,
+            "weight":55
+        },
+        {
+            "id":3,
+            "title":"Never Love",
+            "image":"/assets/products/never-stop-changing.jpg",
+            "price":550,
+            "category":"Book",
+            "count":10,
+            "weight":55
+        },
+        {
+            "id":4,
+            "title":"Never Love",
+            "image":"/assets/products/yosemite.jpg",
+            "price":32,
+            "category":"Book",
+            "count":10,
+            "weight":55
+        },
+        {
+            "id":5,
+            "title":"Never Love",
+            "image":"/assets/products/first-snow.jpg",
+            "price":99,
+            "category":"Book",
+            "count":10,
+            "weight":55
+        }
+    ]
+}
