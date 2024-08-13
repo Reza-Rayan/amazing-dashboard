@@ -1,5 +1,8 @@
 import { menuItems } from "../../../configs/menuItems";
+// Custom Components
 import MenuItem from "./MenuItem";
+import ShopMenu from "./ShopMenu";
+// -----------------------------------------------------
 
 const MenuList = () => {
   return (
@@ -14,6 +17,7 @@ const MenuList = () => {
         {menuItems.map((item) => (
           <MenuItem item={item} key={item.id} />
         ))}
+        <ShopMenu />
       </ul>
     </div>
   );
