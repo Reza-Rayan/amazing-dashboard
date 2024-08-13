@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 // Pages
-import Messenger from "../app/pages/messenger";
 import Dashboard from "../app/pages/Dashboard";
 import ProjectsPage from "../app/pages/Projects";
 import ProjectPage from "../app/pages/project";
@@ -16,7 +15,6 @@ const RouteConfig = () => {
     <>
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/messenger" element={<Messenger />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/:title" element={<ProjectPage />} />
         <Route path="/products" element={<Products />} />
