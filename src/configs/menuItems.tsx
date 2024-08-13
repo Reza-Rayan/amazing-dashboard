@@ -1,5 +1,4 @@
 import {
-  ChatIcon,
   ClipboardIcon,
   HomeIcon,
   PencilAltIcon,
@@ -20,12 +19,6 @@ export const menuItems = [
   },
   {
     id: 3,
-    title: "Messenger",
-    link: "/messenger",
-    icon: <ChatIcon width={20} />,
-  },
-  {
-    id: 4,
     title: "Profile",
     link: "/profile",
     icon: <PencilAltIcon width={20} />,
