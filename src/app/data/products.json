@@ -3,15 +3,17 @@
         {
             "id":1,
             "title":"Never Love",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
             "image":"/assets/products/first-snow.jpg",
             "price":99,
             "category":"Book",
-            "count":10,
+            "count":2,
             "weight":55
         },
         {
             "id":2,
-            "title":"Never Love",
+            "title":"Do You Love",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
             "image":"/assets/products/morain-lake.jpg",
             "price":135,
             "category":"Book",
@@ -20,7 +22,8 @@
         },
         {
             "id":3,
-            "title":"Never Love",
+            "title":"Hongout",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
             "image":"/assets/products/never-stop-changing.jpg",
             "price":550,
             "category":"Book",
@@ -29,7 +32,8 @@
         },
         {
             "id":4,
-            "title":"Never Love",
+            "title":"Go to room",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
             "image":"/assets/products/yosemite.jpg",
             "price":32,
             "category":"Book",
@@ -38,7 +42,8 @@
         },
         {
             "id":5,
-            "title":"Never Love",
+            "title":"Friend",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
             "image":"/assets/products/first-snow.jpg",
             "price":99,
             "category":"Book",

@@ -2,6 +2,7 @@ import { Chip } from "@mui/material";
 import Box from "@mui/material/Box";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { ProductProps } from "../../../../types/Product.interface";
+import { Link } from "react-router-dom";
 // ----------------------------------------------------------------
 
 const columns: GridColDef[] = [
@@ -28,8 +29,18 @@ const columns: GridColDef[] = [
   {
     field: "title",
     headerName: "Product Name",
-    width: 300,
-    editable: true,
+    type: "string",
+    width: 130,
+    renderCell: (params) => {
+      const title = params.value;
+      if (title) {
+        return (
+          <Link to={`${title}`} className="underline">
+            {title}
+          </Link>
+        );
+      }
+    },
   },
   {
     field: "price",

@@ -30,7 +30,7 @@ const Products = () => {
           </Button>
         </Box>
       </CContainer>
-      <CContainer>
+      <CContainer extraClasses="mt-4">
         <ProductsTable products={products} />
       </CContainer>
     </>
