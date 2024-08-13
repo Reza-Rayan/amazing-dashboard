@@ -5,6 +5,7 @@ import CardContent from "@mui/joy/CardContent";
 import CardOverflow from "@mui/joy/CardOverflow";
 import Typography from "@mui/joy/Typography";
 import { Button, Chip } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 // Types
 import { CheckCircleIcon } from "@heroicons/react/outline";
 import { ProjectProps } from "../../../../types/Project.interface";
@@ -17,6 +18,7 @@ const ProjectCard = ({
   completed,
   category,
 }: ProjectProps) => {
+  const navigate = useNavigate();
   return (
     <Card
       data-resizable
@@ -72,6 +74,7 @@ const ProjectCard = ({
         <Button
           variant="outlined"
           sx={{ borderRadius: "8px", borderColor: "#1d4ed8" }}
+          onClick={() => navigate(`${title}`)}
         >
           Continue
         </Button>

@@ -1,10 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 // Pages
-import Messenger from "../app/pages/Messanger";
+import Messenger from "../app/pages/messenger";
 import Dashboard from "../app/pages/Dashboard";
 import ProjectsPage from "../app/pages/Projects";
+import ProjectPage from "../app/pages/project";
 // Errors Pages
-import NotFound from "../app/pages/Errors/NotFound";
+import NotFound from "../app/pages/error/NotFound";
 
 const RouteConfig = () => {
   return (
@@ -13,6 +14,7 @@ const RouteConfig = () => {
         <Route path="/" element={<Dashboard />} />
         <Route path="/messenger" element={<Messenger />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/:title" element={<ProjectPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
