@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import {
+  Alert,
   Box,
   Button,
   Divider,
@@ -8,15 +10,36 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import Snackbar, { SnackbarCloseReason } from "@mui/material/Snackbar";
+// Images & Icons
+import { ArrowLeftIcon, CreditCardIcon } from "@heroicons/react/outline";
 // Custom Components
 import CContainer from "../../templates/CContainer";
 // Mock Data
 import { products } from "../../data/products.json";
-import { ArrowLeftIcon, CreditCardIcon } from "@heroicons/react/outline";
 
 const ProductPage = () => {
   const { title } = useParams();
   const navigate = useNavigate();
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+
+  const handleClick = () => {
+    setOpenSnackbar(true);
+    setTimeout(() => {
+      navigate("/cart");
+    }, 4000);
+  };
+
+  const handleClose = (
+    _event: React.SyntheticEvent | Event,
+    reason?: SnackbarCloseReason
+  ) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpenSnackbar(false);
+  };
 
   const product = products.find((prod) => prod.title === title);
   return (
@@ -95,8 +118,9 @@ const ProductPage = () => {
                   variant="contained"
                   color="success"
                   startIcon={<CreditCardIcon width={16} />}
+                  onClick={handleClick}
                 >
-                  Buy
+                  Add to Cart
                 </Button>
                 <TextField
                   type="number"
@@ -119,6 +143,19 @@ const ProductPage = () => {
           </div>
         </Box>
       </CContainer>
+
+      {/* SnackBars */}
+      <Snackbar
+        open={openSnackbar}
+        autoHideDuration={3000}
+        onClose={handleClose}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      >
+        <Alert variant="filled" color="success">
+          Product added to cart
+        </Alert>
+      </Snackbar>
+      {/* End Here */}
     </>
   );
 };
