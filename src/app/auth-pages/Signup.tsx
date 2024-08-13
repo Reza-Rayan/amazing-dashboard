@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Avatar,
   AvatarGroup,
@@ -18,7 +18,7 @@ import * as yup from "yup";
 // Custom Components
 import SnackbarMessage from "./components/SnackbarMessage";
 import { SnackbarCloseReason } from "@mui/joy/Snackbar/SnackbarProps";
-// ----------------------------------------------------------
+// --------------------------------------------------------------------
 
 /**
  * Form Validation Schema
@@ -51,7 +51,7 @@ const Signup = () => {
   const handleClick = () => {
     setOpenSnackbar(true);
     setTimeout(() => {
-      navigate("/");
+      navigate("/login");
     }, 4000);
   };
 
@@ -122,6 +122,15 @@ const Signup = () => {
               className="text-gray-600"
             >
               Sign up in Amazing Dashboard
+            </Typography>
+            <Typography variant="caption">
+              You have an account?{" "}
+              <Link
+                to={"/login"}
+                className="underline text-indigo-700 font-semibold"
+              >
+                Login
+              </Link>
             </Typography>
             <Formik
               initialValues={{

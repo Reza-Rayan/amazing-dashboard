@@ -1,4 +1,4 @@
-import { Avatar, Menu, MenuItem, Tooltip } from "@mui/material";
+import { Avatar, Menu, MenuItem } from "@mui/material";
 import { useState } from "react";
 // Images and Icons
 import {
@@ -34,9 +34,7 @@ const ProfileButton = () => {
   return (
     <div className="flex items-center gap-1">
       <div className="mx-4">
-        <Tooltip title="Change Color Theme">
-          <DarkModeButton />
-        </Tooltip>
+        <DarkModeButton />
       </div>
       <Notifications />
       <div className="cursor-pointer hover:bg-slate-100 p-2 rounded-lg transition-all">
@@ -80,7 +78,7 @@ const ProfileButton = () => {
             </Link>
           </MenuItem>
           <MenuItem onClick={handleClose} sx={{ fontSize: "14px" }}>
-            <Link to={"/profile"} className="flex items-center gap-1">
+            <Link to={"/login"} className="flex items-center gap-1">
               <LogoutIcon width={16} />
               Logout
             </Link>
