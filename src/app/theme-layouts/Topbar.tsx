@@ -7,7 +7,7 @@ import { SearchIcon, UsersIcon, HomeIcon } from "@heroicons/react/solid";
 
 const Topbar = () => {
   return (
-    <div className="shadow-lg py-1 px-10 flex justify-between">
+    <div className="shadow-lg py-1 px-10 flex justify-between w-full">
       <div className="flex items-center gap-2">
         <Tooltip title="See Your Friends">
           <Link to={"/"}>
