@@ -247,7 +247,11 @@ const Signup = () => {
           </Box>
         </div>
       </Stack>
-      <SnackbarMessage handleClose={handleClose} openSnackbar={openSnackbar} />
+      <SnackbarMessage
+        handleClose={handleClose}
+        openSnackbar={openSnackbar}
+        message="You registered successfully"
+      />
     </>
   );
 };

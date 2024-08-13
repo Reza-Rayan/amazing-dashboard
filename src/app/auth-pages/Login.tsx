@@ -176,7 +176,11 @@ const Login = () => {
           </Box>
         </div>
       </Stack>
-      <SnackbarMessage handleClose={handleClose} openSnackbar={openSnackbar} />
+      <SnackbarMessage
+        handleClose={handleClose}
+        openSnackbar={openSnackbar}
+        message="you logged in successfully"
+      />
     </>
   );
 };

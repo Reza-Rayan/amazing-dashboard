@@ -4,11 +4,13 @@ import { Snackbar, Alert } from "@mui/material";
 interface SnackbarMessageProps {
   handleClose: any;
   openSnackbar?: boolean;
+  message: string;
 }
 
 const SnackbarMessage = ({
   handleClose,
   openSnackbar,
+  message,
 }: SnackbarMessageProps) => {
   return (
     <Snackbar
@@ -18,7 +20,7 @@ const SnackbarMessage = ({
       anchorOrigin={{ vertical: "top", horizontal: "center" }}
     >
       <Alert variant="filled" color="success">
-        Your account has been registered succussfully
+        {message}
       </Alert>
     </Snackbar>
   );
