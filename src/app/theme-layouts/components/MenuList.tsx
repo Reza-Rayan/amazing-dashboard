@@ -2,6 +2,7 @@ import { menuItems } from "../../../configs/menuItems";
 // Custom Components
 import MenuItem from "./MenuItem";
 import ShopMenu from "./ShopMenu";
+import AuthMenu from "./AuthMenu";
 // -----------------------------------------------------
 
 const MenuList = () => {
@@ -18,6 +19,7 @@ const MenuList = () => {
           <MenuItem item={item} key={item.id} />
         ))}
         <ShopMenu />
+        <AuthMenu />
       </ul>
     </div>
   );
