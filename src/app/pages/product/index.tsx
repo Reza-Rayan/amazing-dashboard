@@ -25,9 +25,6 @@ const ProductPage = () => {
 
   const handleClick = () => {
     setOpenSnackbar(true);
-    setTimeout(() => {
-      navigate("/cart");
-    }, 4000);
   };
 
   const handleClose = (
@@ -128,6 +125,7 @@ const ProductPage = () => {
                   placeholder="Count"
                   variant="outlined"
                   color="secondary"
+                  defaultValue={1}
                 />
               </Box>
               {/* End Here */}

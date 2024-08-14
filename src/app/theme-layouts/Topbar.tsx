@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ProfileButton from "./components/ProfileButton";
 
 // Icons
-import { SearchIcon, UsersIcon, HomeIcon } from "@heroicons/react/solid";
+import { HomeIcon } from "@heroicons/react/solid";
 
 const Topbar = () => {
   return (
@@ -12,16 +12,6 @@ const Topbar = () => {
         <Tooltip title="See Your Friends">
           <Link to={"/"}>
             <HomeIcon width={24} />
-          </Link>
-        </Tooltip>
-        <Tooltip title="See Your Friends">
-          <Link to={"/contacts"}>
-            <UsersIcon width={24} />
-          </Link>
-        </Tooltip>
-        <Tooltip title="See Your Friends">
-          <Link to={"/search"}>
-            <SearchIcon width={24} />
           </Link>
         </Tooltip>
       </div>
