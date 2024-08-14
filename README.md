@@ -16,3 +16,7 @@ npm install
 ```
 npm run dev
 ```
+
+
+# Online Demo
+- [whatch Demo](https://amazing-dashboard.netlify.app/)
