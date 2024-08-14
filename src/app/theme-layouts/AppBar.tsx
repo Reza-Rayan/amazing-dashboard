@@ -4,11 +4,11 @@ import { LayoutProps } from "../../types/Layout.interface";
 import Navbar from "./Navbar";
 import Topbar from "./Topbar";
 // ------------------------------------------------------
+
 const AppBar = ({ children }: LayoutProps) => {
   const location = useLocation();
   const hideAppbar =
     location.pathname === "/signup" || location.pathname === "/login";
-  console.log(hideAppbar);
   return (
     <div className="flex">
       <aside className={`${hideAppbar ? "hidden" : "flex"}`}>

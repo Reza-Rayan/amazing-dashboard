@@ -1,10 +1,8 @@
 export interface UserProps {
-    id?: number;
+    id: string;
     firstName: string;
     lastName: string;
-    email: string;
-    phone: string;
     avatar?: string;
+    phone: string;
     city: string;
-    bio: string;
 }

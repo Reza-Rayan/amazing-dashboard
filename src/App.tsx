@@ -1,17 +1,21 @@
 import { Provider } from "react-redux";
-import store from "./app/lib/store.ts";
-import AppBar from "./app/theme-layouts/AppBar.tsx";
-import RouteConfig from "./configs/routeConfig.tsx";
+import store from "./app/lib/store";
+import AppBar from "./app/theme-layouts/AppBar";
+import RouteConfig from "./configs/routeConfig";
+import AuthProvider from "./app/auth/AuthProvider";
+import setupInterceptors from "./app/auth/axiosInterceptor";
+
+setupInterceptors();
 
 const App = () => {
   return (
-    <>
-      <Provider store={store}>
+    <Provider store={store}>
+      <AuthProvider>
         <AppBar>
           <RouteConfig />
         </AppBar>
-      </Provider>
-    </>
+      </AuthProvider>
+    </Provider>
   );
 };
 
