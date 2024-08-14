@@ -14,6 +14,7 @@ import * as yup from "yup";
 // Custom Components
 import { SnackbarCloseReason } from "@mui/joy/Snackbar/SnackbarProps";
 import SnackbarMessage from "./components/SnackbarMessage";
+import Copyright from "./components/Copyright";
 // -------------------------------------------------------------------
 
 /**
@@ -33,6 +34,7 @@ const schema = yup.object().shape({
 const Login = () => {
   const navigate = useNavigate();
   const [openSnackbar, setOpenSnackbar] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleClick = () => {
     setOpenSnackbar(true);
@@ -57,14 +59,20 @@ const Login = () => {
         direction={"row"}
         display={"flex"}
         justifyContent={"space-between"}
-        className="h-screen"
+        className="h-screen relative"
       >
         <div className="bg-[#1E293B] w-1/2 flex flex-col items-center justify-center gap-y-4">
+          <Copyright />
           <Typography
-            variant="h4"
-            fontSize={40}
+            variant="h1"
             fontWeight={700}
-            color={"white"}
+            color={"#ffffff"}
+            fontSize={46}
+            sx={{
+              background: "linear-gradient(90deg, #FF6B6B, #FFD93D)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
           >
             Welcome to
             <br />
@@ -129,9 +137,10 @@ const Login = () => {
                 console.log("values", values);
                 resetForm();
                 handleClick();
+                setLoading(true);
               }}
             >
-              {() => (
+              {({ isValid, dirty }) => (
                 <Form
                   name="loginForm"
                   noValidate
@@ -167,6 +176,7 @@ const Login = () => {
                     aria-label="Login"
                     type="submit"
                     size="large"
+                    disabled={!(isValid && dirty && !loading)}
                   >
                     Login
                   </Button>

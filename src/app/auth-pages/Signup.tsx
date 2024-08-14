@@ -18,6 +18,7 @@ import * as yup from "yup";
 // Custom Components
 import SnackbarMessage from "./components/SnackbarMessage";
 import { SnackbarCloseReason } from "@mui/joy/Snackbar/SnackbarProps";
+import Copyright from "./components/Copyright";
 // --------------------------------------------------------------------
 
 /**
@@ -47,6 +48,7 @@ const schema = yup.object().shape({
 const Signup = () => {
   const navigate = useNavigate();
   const [openSnackbar, setOpenSnackbar] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleClick = () => {
     setOpenSnackbar(true);
@@ -72,7 +74,8 @@ const Signup = () => {
         justifyContent={"space-between"}
         className="h-screen"
       >
-        <div className="bg-[#1E293B] w-1/2 flex flex-col items-center justify-center gap-y-4">
+        <div className="bg-[#1E293B] w-1/2 flex flex-col items-center justify-center gap-y-4 relative">
+          <Copyright />
           <Typography
             variant="h4"
             fontSize={40}
@@ -146,6 +149,7 @@ const Signup = () => {
                 console.log(values);
                 resetForm();
                 handleClick();
+                setLoading(true);
               }}
             >
               {({ isValid, dirty }) => (
@@ -237,7 +241,7 @@ const Signup = () => {
                     aria-label="Register"
                     type="submit"
                     size="large"
-                    disabled={!(isValid && dirty)}
+                    disabled={!(isValid && dirty && !loading)}
                   >
                     Create your free account
                   </Button>
